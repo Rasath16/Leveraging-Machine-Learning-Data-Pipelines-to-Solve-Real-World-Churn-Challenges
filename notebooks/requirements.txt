@@ -5,6 +5,9 @@ seaborn #Visualization
 matplotlib # for visualization
 xgboost
 catboost
+scipy
+imblearn
+
 
 
 

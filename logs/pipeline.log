@@ -1,0 +1,191 @@
+2025-08-19 15:01:25,412 - ERROR - Failed to load data from ../data/raw/hmQOVnDvRN.csv
+Traceback (most recent call last):
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\data_pipeline\data_ingestion.py", line 15, in load_data
+    df = pd.read_csv(self.file_path)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '../data/raw/hmQOVnDvRN.csv'
+2025-08-19 15:02:11,752 - ERROR - Failed to load data from ../data/raw/hmQOVnDvRN.csv
+Traceback (most recent call last):
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\data_pipeline\data_ingestion.py", line 15, in load_data
+    df = pd.read_csv(self.file_path)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '../data/raw/hmQOVnDvRN.csv'
+2025-08-19 15:04:31,252 - ERROR - Failed to load data from ../data/raw/hmQOVnDvRN.csv
+Traceback (most recent call last):
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\data_pipeline\data_ingestion.py", line 15, in load_data
+    df = pd.read_csv(self.file_path)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\.venv\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '../data/raw/hmQOVnDvRN.csv'
+2025-08-19 15:10:38,437 - ERROR - Failed to load data from ../data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
+Traceback (most recent call last):
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\data_pipeline\data_ingestion.py", line 15, in load_data
+    df = pd.read_csv(self.file_path)
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '../data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv'
+2025-08-19 15:16:25,322 - ERROR - Failed to load data from ../data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv
+Traceback (most recent call last):
+  File "D:\ML\ZuuCrew\Advanced-Telco-Churn-Prediction-System\data_pipeline\data_ingestion.py", line 15, in load_data
+    df = pd.read_csv(self.file_path)
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\parsers\readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\DELL\anaconda3\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: '../data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv'
+2025-08-19 15:17:16,986 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:17:16,998 - INFO - Dropped column: customerID
+2025-08-19 15:18:20,147 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:18:20,149 - INFO - Dropped column: customerID
+2025-08-19 15:18:20,149 - INFO - Unique values before mapping: ['No' 'Yes']
+2025-08-19 15:18:20,149 - INFO - Mapping being used: {True: 1, False: 0}
+2025-08-19 15:18:20,157 - INFO - Unique values after mapping: [nan]
+2025-08-19 15:18:49,755 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:18:49,757 - INFO - Dropped column: customerID
+2025-08-19 15:18:49,758 - INFO - Unique values before mapping: ['No' 'Yes']
+2025-08-19 15:18:49,758 - INFO - Mapping being used: {True: 1, False: 0}
+2025-08-19 15:18:49,760 - INFO - Unique values after mapping: [nan]
+2025-08-19 15:19:08,838 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:19:08,842 - INFO - Dropped column: customerID
+2025-08-19 15:19:08,842 - INFO - Unique values before mapping: ['No' 'Yes']
+2025-08-19 15:19:08,843 - INFO - Mapping being used: {'Yes': 1, 'No': 0}
+2025-08-19 15:19:08,847 - INFO - Unique values after mapping: [0 1]
+2025-08-19 15:19:08,848 - INFO - Mapped target column 'Churn' using provided mapping.
+2025-08-19 15:19:08,853 - INFO - Imputed 11 NaNs in 'TotalCharges' using median.
+2025-08-19 15:19:55,191 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:19:55,194 - INFO - Dropped column: customerID
+2025-08-19 15:19:55,195 - INFO - Unique values before mapping: ['No' 'Yes']
+2025-08-19 15:19:55,195 - INFO - Mapping being used: {'Yes': 1, 'No': 0}
+2025-08-19 15:19:55,197 - INFO - Unique values after mapping: [0 1]
+2025-08-19 15:19:55,197 - INFO - Mapped target column 'Churn' using provided mapping.
+2025-08-19 15:19:55,200 - INFO - Imputed 11 NaNs in 'TotalCharges' using median.
+2025-08-19 15:19:55,597 - INFO - Data pipeline completed successfully.
+2025-08-19 15:48:43,686 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:48:43,698 - INFO - Dropped column: customerID
+2025-08-19 15:48:43,700 - INFO - Unique values before mapping: ['No' 'Yes']
+2025-08-19 15:48:43,700 - INFO - Mapping being used: {'Yes': 1, 'No': 0}
+2025-08-19 15:48:43,703 - INFO - Unique values after mapping: [0 1]
+2025-08-19 15:48:43,703 - INFO - Mapped target column 'Churn' using provided mapping.
+2025-08-19 15:48:43,706 - INFO - Imputed 11 NaNs in 'TotalCharges' using median.
+2025-08-19 15:48:48,548 - INFO - Data pipeline completed successfully.
+2025-08-19 15:50:12,823 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:50:12,825 - INFO - Dropped column: customerID
+2025-08-19 15:50:12,826 - INFO - Unique values before mapping: ['No' 'Yes']
+2025-08-19 15:50:12,827 - INFO - Mapping being used: {'Yes': 1, 'No': 0}
+2025-08-19 15:50:12,828 - INFO - Unique values after mapping: [0 1]
+2025-08-19 15:50:12,829 - INFO - Mapped target column 'Churn' using provided mapping.
+2025-08-19 15:50:12,832 - INFO - Imputed 11 NaNs in 'TotalCharges' using median.
+2025-08-19 15:50:17,197 - INFO - Data pipeline completed successfully.
+2025-08-19 15:54:52,782 - INFO - Loaded data from d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv with shape (7043, 21)
+2025-08-19 15:54:52,800 - INFO - Dropped column: customerID
+2025-08-19 15:54:52,802 - INFO - Unique values before mapping: ['No' 'Yes']
+2025-08-19 15:54:52,802 - INFO - Mapping being used: {'Yes': 1, 'No': 0}
+2025-08-19 15:54:52,805 - INFO - Unique values after mapping: [0 1]
+2025-08-19 15:54:52,806 - INFO - Mapped target column 'Churn' using provided mapping.
+2025-08-19 15:54:52,809 - INFO - Imputed 11 NaNs in 'TotalCharges' using median.
+2025-08-19 15:54:53,048 - INFO - Data pipeline completed successfully.

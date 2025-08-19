@@ -1,0 +1,45 @@
+data:
+  file_path: "d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/data/raw/WA_Fn-UseC_-Telco-Customer-Churn.csv"
+  drop_columns: ["customerID"]
+  target_column: "Churn"
+  target_mapping:
+    "Yes": 1
+    "No": 0
+
+preprocessing:
+  numeric_to_coerce: ["TotalCharges"]
+  missing_value_strategy: "median"
+
+  encoding: "onehot"
+  scaling: "standard"
+
+  binning:
+    tenure_bins: [0, 12, 24, 48, 72]
+    tenure_labels: ["New", "Established", "Loyal", "Very Loyal"]
+
+  # Feature engineering options
+  service_columns:
+    [
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+    ]
+  autopay_keywords: ["auto", "bank", "credit"]
+
+  test_size: 0.2
+  random_state: 42
+  smote: true
+
+artifacts:
+  x_train: "d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/artifacts_pipeline/preprocessed/X_train.npz"
+  y_train: "d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/artifacts_pipeline/preprocessed/y_train.npz"
+  x_test: "d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/artifacts_pipeline/preprocessed/X_test.npz"
+  y_test: "d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/artifacts_pipeline/preprocessed/y_test.npz"
+  feature_names: "d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/artifacts_pipeline/feature_names.npy"
+  preprocessor: "d:/ML/ZuuCrew/Advanced-Telco-Churn-Prediction-System/artifacts_pipeline/preprocessor.joblib"

@@ -1,8 +1,5 @@
 # 📊 Advanced Telco Churn Prediction System
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
-![ML](https://img.shields.io/badge/Machine%20Learning-Sklearn%2C%20XGBoost%2C%20CatBoost-orange)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 A **production-ready, end-to-end machine learning pipeline** for predicting customer churn in the telecommunications industry.  
 This project combines **exploratory data analysis, feature engineering, advanced ML models, evaluation metrics, and business insights** into a single streamlined system.
@@ -168,8 +165,6 @@ Please ensure:
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
-See the [LICENSE](LICENSE) file for details.
 
 ---
 

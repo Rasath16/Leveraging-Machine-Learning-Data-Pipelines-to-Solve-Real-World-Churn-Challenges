@@ -1,117 +1,180 @@
-# Advanced Telco Churn Prediction System
+# 📊 Advanced Telco Churn Prediction System
 
-A production-ready, end-to-end machine learning pipeline and ensemble model suite for predicting customer churn in the telecommunications industry. Built for both transparency and scalability via Jupyter notebooks and modular Python code.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+![ML](https://img.shields.io/badge/Machine%20Learning-Sklearn%2C%20XGBoost%2C%20CatBoost-orange)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Table of Contents
+A **production-ready, end-to-end machine learning pipeline** for predicting customer churn in the telecommunications industry.  
+This project combines **exploratory data analysis, feature engineering, advanced ML models, evaluation metrics, and business insights** into a single streamlined system.
+
+---
+
+## 📚 Table of Contents
 
 1. [Overview](#overview)
 2. [Project Structure](#project-structure)
-3. [Key Features](#key-features)
-4. [Installation & Setup](#installation--setup)
+3. [Features](#features)
+4. [Installation](#installation)
 5. [Usage](#usage)
 6. [Testing](#testing)
 7. [Contributing](#contributing)
 8. [License](#license)
 9. [Contact](#contact)
 
-## Overview
+---
 
-This project guides users through data analysis, feature engineering, model training, evaluation, and business insight generation—all in one cohesive pipeline. It supports multiple ML algorithms, rigorous evaluation, and production-grade components for real-world deployment.
+## 🔎 Overview
 
-## Project Structure
+Customer churn is a major challenge in the telecom industry, directly impacting profitability.  
+This project predicts churners using advanced ML models and delivers **actionable business insights** to help companies design retention strategies.
+
+It includes:
+
+- Modular Python pipeline for **production deployment**
+- Jupyter notebooks for **EDA, preprocessing, training, and evaluation**
+- Business intelligence to **quantify churn impact**
+
+---
+
+## 📂 Project Structure
+
+```
 
 ├── notebooks/
-│ ├── 1.1*data_assesment.ipynb
-│ ├── 1.2_class_imbalance.ipynb
-│ ├── 1.3_univariate.ipynb
-│ ├── 1.4_bivariate*.ipynb
-│ ├── 1.5_multivariate.ipynb
-│ ├── 1.6_Business_insights.ipynb
-│ ├── 2_data_preprocessing.ipynb
-│ ├── 3_models_training.ipynb
-│ └── 4_evaluation.ipynb
+│   ├── 1.1\_data\_assesment.ipynb
+│   ├── 1.2\_class\_imbalance.ipynb
+│   ├── 1.3\_univariate.ipynb
+│   ├── 1.4\_bivariate\_.ipynb
+│   ├── 1.5\_multivariate.ipynb
+│   ├── 1.6\_Business\_insights.ipynb
+│   ├── 2\_data\_preprocessing.ipynb
+│   ├── 3\_models\_training.ipynb
+│   └── 4\_evaluation.ipynb
 ├── data/
-│ ├── raw/
-│ ├── processed/
-│ └── external/
-├── data_pipeline/
-├── artifacts_pipeline/
-├── JoblibModels/
-├── logs/
-├── new_artifacts/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+├── data\_pipeline/          # Production data processing modules
+├── artifacts\_pipeline/     # Preprocessing artifacts
+├── JoblibModels/           # Saved models
+├── logs/                   # Pipeline logs
+├── new\_artifacts/          # Additional model outputs
 ├── config/
-│ └── config.yaml
-├── tests/
-│ ├── test_data_ingestion.py
-│ ├── test_missing_values.py
-│ ├── test_feature_engineering.py
-│ └── test_pipeline.py
-├── main.py
-├── requirements.txt
+│   └── config.yaml         # Configuration file
+├── tests/                  # Unit tests (pytest)
+├── main.py                 # Run the full pipeline
+├── requirements.txt        # Dependencies
 └── README.md
 
-## Key Features
+```
 
-- **Exploratory Data Analysis**: univariate, bivariate, multivariate stats and visualizations
-- **Business Intelligence**: churn drivers, customer segments, revenue impact
-- **Modeling Suite**: Logistic Regression, Decision Tree, Random Forest, XGBoost, CatBoost with hyperparameter tuning
-- **Robust Evaluation**: accuracy, precision, recall, F1-score, ROC-AUC, confusion matrices, feature importance
-- **Production-Ready Pipeline**: modular code for ingestion, processing, imbalance handling, feature transformations
-- **Testing**: comprehensive `pytest` suite for validation and maintainability
+---
 
-## Installation & Setup
+## ⚡ Features
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/Rasath16/Advanced-Telco-Churn-Prediction-System.git
-   cd Advanced-Telco-Churn-Prediction-System
-   ```
-2. Install dependencies:
-   pip install -r requirements.txt
+✅ **Exploratory Data Analysis (EDA):** Univariate, bivariate, and multivariate visualizations  
+✅ **Imbalanced Data Handling:** SMOTE oversampling for churn class balance  
+✅ **Business Intelligence:** Identify churn drivers, revenue impact, and customer risk segments  
+✅ **Modeling Suite:** Logistic Regression, Decision Trees, Random Forests, XGBoost, CatBoost  
+✅ **Evaluation Metrics:** Accuracy, Precision, Recall, F1-Score, ROC-AUC, Confusion Matrix  
+✅ **Feature Importance:** Model interpretability to explain churn predictions  
+✅ **Production Ready:** Modular pipeline with config management & logging  
+✅ **Testing:** Automated unit tests with `pytest`
 
-3.Modify config parameters in config/config.yaml as needed
+---
 
-4.Run the automated pipeline:
+## ⚙️ Installation
+
+Clone the repo and install dependencies:
+
+```bash
+# Clone repository
+git clone https://github.com/Rasath16/Advanced-Telco-Churn-Prediction-System.git
+cd Advanced-Telco-Churn-Prediction-System
+
+# Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+### Option 1: Run the full automated pipeline
+
+```bash
 python main.py
+```
 
-## Usage
+### Option 2: Step through Jupyter notebooks
 
-Step through notebooks for detailed insights:
+1. `1.1_data_assesment.ipynb` → Assess data quality
+2. `1.2_class_imbalance.ipynb` → Handle imbalance with SMOTE
+3. `1.3_univariate.ipynb` → Univariate EDA
+4. `1.4_bivariate_.ipynb` → Bivariate EDA
+5. `1.5_multivariate.ipynb` → Multivariate EDA
+6. `1.6_Business_insights.ipynb` → Generate churn insights
+7. `2_data_preprocessing.ipynb` → Preprocessing & feature engineering
+8. `3_models_training.ipynb` → Model training & tuning
+9. `4_evaluation.ipynb` → Model evaluation & comparison
 
-1.1_data_assesment.ipynb → data cleaning
+---
 
-1.2_class_imbalance.ipynb → SMOTE balancing
+## 🧪 Testing
 
-1.3–1.5 → EDA
+Run the unit tests with **pytest**:
 
-1.6_Business_insights.ipynb → churn analysis
-
-2_data_preprocessing.ipynb → feature prep
-
-3_models_training.ipynb → model fitting
-
-4_evaluation.ipynb → performance review
-
-Or execute main.py for streamlined execution.
-
-## Testing
-
+```bash
 pytest tests/ -v
+```
 
-Or specifically:
+Example (test data ingestion only):
 
+```bash
 pytest tests/test_data_ingestion.py
+```
 
-Tests cover: ingestion, missing value handling, feature engineering, pipeline integrity, configuration validation.
+Tests cover:
 
-## Contributing
+- Data ingestion validation
+- Missing value handling
+- Feature engineering
+- Pipeline consistency
 
-Contributions are welcome! Please:
+---
 
-Follow existing code and folder conventions
+## 🤝 Contributing
 
-Add corresponding tests for new features
+Contributions are welcome!
 
-Ensure all tests pass before submitting a PR
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/new-feature`)
+3. Commit changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
-Update documentation when relevant
+Please ensure:
+
+- Tests are added/updated
+- Code style is consistent
+- Documentation is updated
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📬 Contact
+
+👤 **Author:** [Rasath16](https://github.com/Rasath16)
+
+If you have questions or suggestions, feel free to open an **issue** or reach out via GitHub. 🚀
